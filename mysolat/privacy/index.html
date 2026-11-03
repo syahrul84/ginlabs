@@ -1,0 +1,158 @@
+<title>mySolat Privacy & Support</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one quiet reading column, black and white like the app, sections set off by thin rules. */
+:root {
+  --paper: #ffffff;
+  --ink: #111111;
+  --muted: #5b5d63;
+  --rule: #e2e3e6;
+  --chip: #f2f3f5;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #000000; --ink: #f4f4f5; --muted: #a2a4ab; --rule: #26272b; --chip: #141518; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper: #000000; --ink: #f4f4f5; --muted: #a2a4ab; --rule: #26272b; --chip: #141518; color-scheme: dark; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 42rem; margin: 0 auto; padding-block: 48px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 10px; }
+.mark { width: 56px; height: 56px; border-radius: 13px; background: #000; display: grid; place-items: center; }
+.mark svg { width: 38px; height: 38px; }
+h1 { font: 600 2.4rem/1.1 var(--display); letter-spacing: -0.01em; margin: 6px 0 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 34rem; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { color: var(--ink); text-decoration: none; background: var(--chip); padding: 6px 12px; border-radius: 999px; font-size: 0.93rem; font-weight: 600; }
+nav a:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+section { display: grid; gap: 12px; border-top: 1px solid var(--rule); padding-top: 28px; }
+h2 { font: 600 1.55rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+h3 { font-size: 1rem; font-weight: 600; margin: 8px 0 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: grid; gap: 6px; }
+.eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.contact { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; background: var(--chip); padding: 14px 16px; border-radius: 12px; }
+.contact code { font: 600 1.02rem/1.3 var(--body); user-select: all; overflow-wrap: anywhere; }
+.contact button { font: 600 0.9rem var(--body); color: var(--paper); background: var(--ink); border: 0; border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; white-space: nowrap; }
+td { min-width: 12rem; }
+a { color: var(--ink); }
+footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 20px; }
+[lang="ms"] { color: var(--muted); }
+</style>
+
+<main>
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round">
+        <circle cx="32" cy="32" r="19"/>
+        <path d="M32 6 35 13 32 11 29 13Z M32 58 35 51 32 53 29 51Z M6 32 13 29 11 32 13 35Z M58 32 51 29 53 32 51 35Z"/>
+        <path d="M22 41V25l10-4 10 4v16"/>
+        <path d="M28 40 39 27 35 38Z"/>
+      </svg>
+    </div>
+    <span class="eyebrow">mySolat · iPhone and Android</span>
+    <h1>Privacy &amp; Support</h1>
+    <p class="lede">mySolat shows JAKIM prayer times, reminds you before each solat and counts your rakaat. It has no account, no ads and no tracking.</p>
+    <nav aria-label="On this page">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy policy</a>
+      <a href="#sources">Sources &amp; credits</a>
+    </nav>
+  </header>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, a wrong prayer time for your zone, or an idea for the app? Email the developer, GIN Labs:</p>
+    <div class="contact">
+      <code id="email">syahrul.farhan@gmail.com</code>
+      <button type="button" id="copy">Copy</button>
+    </div>
+    <p>Please mention your phone (iPhone or Android), the app version from Settings, and your zone code, for example SGR01.</p>
+    <p lang="ms">Ada soalan, waktu solat yang salah untuk zon anda, atau cadangan? Hantar e-mel ke alamat di atas.</p>
+  </section>
+
+  <section id="privacy">
+    <span class="eyebrow">Effective 3 November 2026</span>
+    <h2>Privacy policy</h2>
+    <p>The short version: mySolat keeps your settings and prayer times on your phone. The developer receives no data about you, and the app has no accounts, ads, analytics or tracking.</p>
+
+    <h3>What stays on your phone</h3>
+    <ul>
+      <li>Your settings, your prayer zone, saved locations and the downloaded prayer times.</li>
+      <li>The camera picture used by the rakaat counter. It is analysed on the phone to notice each sujud, and is never recorded, stored or sent anywhere. The camera only runs while the counter screen is open.</li>
+      <li>Whether a phone call is answered during a rakaat count, so the count can end. The app sees only that a call is active, never who is calling.</li>
+    </ul>
+
+    <h3>What leaves your phone, and why</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>What it receives</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td>api.waktusolat.app</td><td>Your prayer zone code. If you choose "Use current location", your coordinates once, to find your JAKIM zone.</td><td>Updating prayer times; finding your zone</td></tr>
+          <tr><td>Apple Maps (iPhone) or Google geocoding (Android)</td><td>The place name you type, or your coordinates, to find a place and its name. The iPhone Kiblat map loads from Apple Maps.</td><td>Searching places; using your location; the Kiblat tab</td></tr>
+          <tr><td>OpenFreeMap (Android)</td><td>Requests for the map area being shown.</td><td>The Kiblat tab</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Like any internet request, these services also see your IP address. Each handles data under its own privacy policy. mySolat does not send your location anywhere else, does not keep it, and does not share it with anyone.</p>
+
+    <h3>Permissions</h3>
+    <ul>
+      <li><strong>Notifications and alarms:</strong> for the reminders and the optional alarm at prayer time.</li>
+      <li><strong>Location:</strong> only when you use your current location or open Kiblat. You can always choose a zone by hand instead.</li>
+      <li><strong>Camera:</strong> only for the rakaat counter. There is no microphone access at all.</li>
+    </ul>
+
+    <h3>Children</h3>
+    <p>mySolat collects no personal information from anyone, including children.</p>
+
+    <h3>Deleting your data</h3>
+    <p>Everything mySolat stores is on your phone. Uninstalling the app removes it.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+    <h3>Contact</h3>
+    <p>GIN Labs, Malaysia: syahrul.farhan@gmail.com</p>
+  </section>
+
+  <section id="sources">
+    <h2>Sources &amp; credits</h2>
+    <ul>
+      <li>Malaysian prayer times come from JAKIM's e-solat, through the free api.waktusolat.app service. mySolat is an independent app and is not affiliated with JAKIM or any government agency.</li>
+      <li>Outside Malaysia, times are calculated on the phone with the open-source Adhan library.</li>
+      <li>Surah Al-Mulk: text and font (KFGQPC HAFS Uthmanic Script) by the King Fahd Glorious Quran Printing Complex, used unmodified under its licence.</li>
+      <li>Android Kiblat map: OpenFreeMap, with map data © OpenStreetMap contributors.</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 GIN Labs · mySolat</footer>
+</main>
+
+<script>
+  const btn = document.getElementById('copy');
+  const email = document.getElementById('email');
+  btn.addEventListener('click', () => {
+    const done = () => { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy'; }, 1600); };
+    const select = () => { const r = document.createRange(); r.selectNodeContents(email); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try {
+      navigator.clipboard.writeText(email.textContent).then(done, select);
+    } catch (e) { select(); }
+  });
+  const target = location.hash.slice(1);
+  if (target && document.getElementById(target)) document.getElementById(target).scrollIntoView();
+</script>
